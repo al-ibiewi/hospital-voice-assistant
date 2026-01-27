@@ -1,5 +1,14 @@
-/* Mobile Responsive Design */
+/* Tablet Responsive Design (768px and below) */
 @media (max-width: 768px) {
+    .navbar .container {
+        justify-content: center;
+        gap: 0;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+    }
+    
     .nav-links {
         display: none;
     }
@@ -10,10 +19,6 @@
     
     body {
         padding-bottom: 100px;
-    }
-    
-    .logo {
-        font-size: 1.2rem;
     }
     
     .hero h1 {
