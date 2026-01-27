@@ -1,0 +1,125 @@
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .mobile-navbar {
+        display: flex !important;
+    }
+    
+    body {
+        padding-bottom: 100px;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1.125rem;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .solution-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .impact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .app-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .app-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .phone-frame {
+        width: 280px;
+    }
+    
+    .phone-screen {
+        padding: 16px;
+        min-height: 500px;
+    }
+    
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 0 16px;
+    }
+    
+    .hero {
+        padding-top: 70px;
+        min-height: auto;
+        padding-bottom: 3rem;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+    
+    .stat h3 {
+        font-size: 2.5rem;
+    }
+    
+    .solution-text h3,
+    .app-text h3 {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .phone-frame {
+        width: 260px;
+    }
+    
+    .phone-screen {
+        padding: 16px;
+    }
+    
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+    
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .app-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .impact-stat-large h3 {
+        font-size: 3rem;
+    }
+    
+    .impact-stat-large p {
+        font-size: 1.25rem;
+    }
+}

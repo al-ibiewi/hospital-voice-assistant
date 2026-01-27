@@ -1,0 +1,74 @@
+/* CSS Variables and Custom Properties */
+:root {
+    /* Colors */
+    --primary-color: #0066ff;
+    --secondary-color: #00d4ff;
+    --accent-color: #ff6b6b;
+    --text-dark: #e5e7eb;
+    --text-light: #9ca3af;
+    --bg-light: #1f2937;
+    --bg-white: #111827;
+    --bg-dark: #0a0e1a;
+    --bg-darker: #0f1419;
+    --success-color: #10b981;
+    --error-color: #dc2626;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-2xl: 4rem;
+    --spacing-3xl: 5rem;
+    --spacing-4xl: 7rem;
+    
+    /* Border Radius */
+    --border-radius: 16px;
+    --border-radius-lg: 20px;
+    --border-radius-xl: 24px;
+    --border-radius-2xl: 50px;
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.6);
+    
+    /* Typography */
+    --font-family: 'Eczar', serif;
+    --font-weight-regular: 400;
+    --font-weight-semibold: 500;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 800;
+    --font-weight-black: 900;
+    
+    /* Line Heights */
+    --line-height-tight: 1.1;
+    --line-height-normal: 1.6;
+    --line-height-relaxed: 1.8;
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Z-index Scale */
+    --z-dropdown: 100;
+    --z-sticky: 200;
+    --z-fixed: 1000;
+    --z-modal-backdrop: 1040;
+    --z-modal: 1050;
+    --z-popover: 1060;
+    --z-tooltip: 1070;
+    
+    /* Breakpoints (for reference) */
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+}
+
+html {
+    scroll-behavior: smooth;
+}

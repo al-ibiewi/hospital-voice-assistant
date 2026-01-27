@@ -3,25 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Offline AI-powered voice assistant for Nigerian hospitals. Edge computing technology for reliable healthcare in resource-constrained environments.">
     <title>Hospital Voice Assistant - Offline AI for Healthcare</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="logo">Hospital Voice Assistant</div>
-                <div class="nav-links">
+            <div class="nav-links">
                 <a href="#home">Home</a>
-                <a href="#problem">Problem</a>
                 <a href="#solution">Solution</a>
                 <a href="#technology">Technology</a>
-                <a href="#mobile-app">Mobile App</a>
-                <a href="#impact">Impact</a>
                 <a href="#contact">Contact</a>
-                <div>
             </div>
         </div>
+    </nav>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-navbar">
+        <a href="#home" class="mobile-nav-item" title="Home">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 50 20 L 20 50 L 30 50 L 30 75 L 70 75 L 70 50 L 80 50 Z" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="40" y="50" width="20" height="25" fill="none" stroke="currentColor" stroke-width="5"/>
+            </svg>
+        </a>
+        <a href="#solution" class="mobile-nav-item" title="Solution">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="35" cy="25" r="8" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+                <path d="M 35 33 L 35 45" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+                <path d="M 20 45 Q 20 50 25 50 Q 30 50 35 55 Q 40 50 45 50 Q 50 50 50 45" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M 50 45 L 70 70" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+                <circle cx="75" cy="75" r="5" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+        </a>
+        <a href="#technology" class="mobile-nav-item" title="Technology">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <rect x="20" y="25" width="60" height="50" rx="4" fill="none" stroke="currentColor" stroke-width="5"/>
+                <line x1="30" y1="25" x2="30" y2="20" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+                <line x1="50" y1="25" x2="50" y2="15" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+                <line x1="70" y1="25" x2="70" y2="20" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+        </a>
+        <a href="#contact" class="mobile-nav-item" title="Contact">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <rect x="28" y="15" width="44" height="70" rx="5" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="50" cy="78" r="3" fill="currentColor"/>
+                <line x1="30" y1="20" x2="70" y2="20" stroke="currentColor" stroke-width="2"/>
+            </svg>
+        </a>
     </nav>
 
     <!-- Hero Section -->
@@ -32,14 +75,34 @@
                 <p class="fade-in-delay">Edge AI assistive system designed for resource-constrained healthcare environments</p>
                 <div class="hero-stats fade-in-delay-2">
                     <div class="stat">
+                        <div class="stat-illustration">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="35" fill="none" stroke="white" stroke-width="2"/>
+                                <path d="M 30 50 Q 50 30 70 50" fill="none" stroke="white" stroke-width="2"/>
+                                <circle cx="50" cy="50" r="8" fill="white"/>
+                                <line x1="20" y1="20" x2="80" y2="80" stroke="white" stroke-width="3"/>
+                            </svg>
+                        </div>
                         <h3>0%</h3>
                         <p>Internet Required</p>
                     </div>
                     <div class="stat">
+                        <div class="stat-illustration">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M 35 20 L 65 20 Q 75 20 75 30 L 75 70 Q 75 80 65 80 L 35 80 Q 25 80 25 70 L 25 30 Q 25 20 35 20" fill="none" stroke="white" stroke-width="2.5"/>
+                                <circle cx="50" cy="45" r="12" fill="none" stroke="white" stroke-width="2"/>
+                                <line x1="50" y1="62" x2="50" y2="72" stroke="white" stroke-width="2"/>
+                            </svg>
+                        </div>
                         <h3>100%</h3>
                         <p>Privacy Protected</p>
                     </div>
                     <div class="stat">
+                        <div class="stat-illustration">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M 50 15 L 60 40 L 85 40 L 67 55 L 75 80 L 50 65 L 25 80 L 33 55 L 15 40 L 40 40 Z" fill="white"/>
+                            </svg>
+                        </div>
                         <h3>&lt;3s</h3>
                         <p>Emergency Response</p>
                     </div>
@@ -54,22 +117,49 @@
             <h2 class="section-title">The Problem</h2>
             <div class="grid-2">
                 <div class="problem-card">
-                    <div class="icon">⚡</div>
+                    <div class="card-illustration">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="30" r="15" fill="currentColor"/>
+                            <path d="M 30 50 L 30 80 Q 30 85 35 85 L 65 85 Q 70 85 70 80 L 70 50" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            <line x1="40" y1="55" x2="40" y2="75" stroke="currentColor" stroke-width="2"/>
+                            <line x1="60" y1="55" x2="60" y2="75" stroke="currentColor" stroke-width="2"/>
+                            <path d="M 50 25 L 50 50" stroke="currentColor" stroke-width="3"/>
+                        </svg>
+                    </div>
                     <h3>Unreliable Infrastructure</h3>
                     <p>Nigerian hospitals face frequent power outages and poor internet connectivity, making cloud-based assistive technology unreliable.</p>
                 </div>
                 <div class="problem-card">
-                    <div class="icon">🏥</div>
+                    <div class="card-illustration">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="25" y="20" width="50" height="60" rx="5" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                            <circle cx="50" cy="35" r="8" fill="currentColor"/>
+                            <line x1="30" y1="50" x2="70" y2="50" stroke="currentColor" stroke-width="2"/>
+                            <line x1="30" y1="60" x2="70" y2="60" stroke="currentColor" stroke-width="2"/>
+                            <line x1="30" y1="70" x2="70" y2="70" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
                     <h3>Understaffed Facilities</h3>
                     <p>Limited nursing staff cannot respond immediately to all patient needs, especially in rural healthcare centers.</p>
                 </div>
                 <div class="problem-card">
-                    <div class="icon">♿</div>
+                    <div class="card-illustration">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                            <path d="M 50 25 L 50 75 M 25 50 L 75 50" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            <circle cx="50" cy="50" r="6" fill="currentColor"/>
+                        </svg>
+                    </div>
                     <h3>Patient Mobility Constraints</h3>
                     <p>Mobility-impaired patients cannot reach call buttons during emergencies, compromising safety and dignity.</p>
                 </div>
                 <div class="problem-card">
-                    <div class="icon">🔒</div>
+                    <div class="card-illustration">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 35 25 L 50 15 L 65 25 L 65 70 Q 65 80 50 85 Q 35 80 35 70 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                            <path d="M 45 45 L 50 50 L 60 40" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     <h3>Privacy Concerns</h3>
                     <p>Cloud-based voice assistants stream patient conversations to remote servers, violating medical confidentiality.</p>
                 </div>
@@ -133,21 +223,52 @@
             <h2 class="section-title">Technology Stack</h2>
             <div class="tech-grid">
                 <div class="tech-card">
+                    <div class="card-illustration small">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="8" fill="currentColor"/>
+                            <circle cx="50" cy="50" r="25" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M 50 10 L 50 90 M 10 50 L 90 50" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
                     <h4>VC-02 Module</h4>
                     <p>Edge AI voice recognition</p>
                     <span class="tech-tag">Offline Processing</span>
                 </div>
                 <div class="tech-card">
+                    <div class="card-illustration small">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="20" y="20" width="60" height="60" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <rect x="30" y="30" width="40" height="30" rx="3" fill="currentColor"/>
+                            <line x1="30" y1="65" x2="40" y2="70" stroke="currentColor" stroke-width="2"/>
+                            <line x1="60" y1="65" x2="70" y2="70" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
                     <h4>ESP32</h4>
                     <p>System controller & logic</p>
                     <span class="tech-tag">IoT Integration</span>
                 </div>
                 <div class="tech-card">
+                    <div class="card-illustration small">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="40" r="18" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                            <path d="M 35 60 L 50 55 L 65 60 L 65 75 Q 65 80 50 85 Q 35 80 35 75 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                            <line x1="50" y1="22" x2="50" y2="10" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
                     <h4>SIM800L</h4>
                     <p>GSM emergency alerts</p>
                     <span class="tech-tag">Cellular Backup</span>
                 </div>
                 <div class="tech-card">
+                    <div class="card-illustration small">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="25" y="30" width="50" height="40" rx="3" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                            <circle cx="35" cy="50" r="6" fill="currentColor"/>
+                            <circle cx="50" cy="50" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="65" cy="50" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
                     <h4>Relay Module</h4>
                     <p>Appliance switching</p>
                     <span class="tech-tag">Hardware Control</span>
@@ -240,25 +361,54 @@
                     
                     <div class="app-features">
                         <div class="app-feature-card">
-                            <div class="app-icon">📱</div>
+                            <div class="card-illustration medium">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="20" y="15" width="60" height="70" rx="5" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                                    <circle cx="50" cy="25" r="3" fill="currentColor"/>
+                                    <path d="M 35 40 Q 50 50 65 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    <line x1="30" y1="55" x2="70" y2="55" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    <line x1="30" y1="65" x2="70" y2="65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
                             <h4>Bluetooth Low Energy</h4>
                             <p>Direct connection to ESP32 controller without requiring hospital WiFi. 30-meter range covers entire patient room.</p>
                         </div>
                         
                         <div class="app-feature-card">
-                            <div class="app-icon">🔄</div>
+                            <div class="card-illustration medium">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="30" cy="40" r="15" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="70" cy="60" r="15" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M 40 35 L 60 65" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                                    <circle cx="30" cy="40" r="6" fill="currentColor"/>
+                                    <circle cx="70" cy="60" r="6" fill="currentColor"/>
+                                </svg>
+                            </div>
                             <h4>State Synchronization</h4>
                             <p>Real-time sync between voice commands, app controls, and physical switches. Change light via voice, see status update in app instantly.</p>
                         </div>
                         
                         <div class="app-feature-card">
-                            <div class="app-icon">👨‍⚕️</div>
+                            <div class="card-illustration medium">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="50" cy="35" r="12" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M 30 55 L 35 65 Q 50 75 70 60" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                                    <circle cx="45" cy="30" r="3" fill="currentColor"/>
+                                    <circle cx="60" cy="32" r="3" fill="currentColor"/>
+                                </svg>
+                            </div>
                             <h4>Family Remote Access</h4>
                             <p>Optional feature allowing family members to monitor patient's room status and receive emergency notifications remotely.</p>
                         </div>
                         
                         <div class="app-feature-card">
-                            <div class="app-icon">♿</div>
+                            <div class="card-illustration medium">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M 50 20 L 70 35 L 70 75 Q 70 80 65 80 L 35 80 Q 30 80 30 75 L 30 35 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                    <circle cx="50" cy="55" r="12" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M 45 50 L 50 55 L 58 45" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
                             <h4>Accessibility First</h4>
                             <p>Large touch targets, high contrast UI, and screen reader support ensure usability for elderly patients with vision impairments.</p>
                         </div>
@@ -268,39 +418,38 @@
                 <div class="app-mockup">
                     <div class="phone-frame">
                         <div class="phone-screen">
-                            <div class="app-header">
-                                <h5>Patient Control Panel</h5>
-                                <span class="status-dot"></span>
-                                <span class="status-text">Connected</span>
+                            <div class="phone-header">
+                                <h5>Hospital Assistant</h5>
+                                <span class="status-badge">Connected</span>
                             </div>
                             
-                            <div class="control-group">
-                                <div class="control-label">💡 Room Light</div>
-                                <div class="toggle-container">
-                                    <div class="toggle-btn toggle-on">ON</div>
-                                    <div class="toggle-btn">OFF</div>
+                            <div class="control-section">
+                                <h4>💡 Room Light</h4>
+                                <div class="toggle-group">
+                                    <button class="toggle-btn toggle-on">ON</button>
+                                    <button class="toggle-btn">OFF</button>
                                 </div>
                             </div>
                             
-                            <div class="control-group">
-                                <div class="control-label">🌀 Room Fan</div>
-                                <div class="toggle-container">
-                                    <div class="toggle-btn">ON</div>
-                                    <div class="toggle-btn toggle-off">OFF</div>
+                            <div class="control-section">
+                                <h4>🌀 Room Fan</h4>
+                                <div class="toggle-group">
+                                    <button class="toggle-btn">ON</button>
+                                    <button class="toggle-btn toggle-off">OFF</button>
                                 </div>
                             </div>
                             
-                            <div class="emergency-btn">
+                            <button class="emergency-btn">
                                 <span class="emergency-icon">🚨</span>
-                                <span>EMERGENCY ALERT</span>
-                            </div>
+                                <span>EMERGENCY</span>
+                            </button>
                             
-                            <div class="app-footer-info">
-                                <div class="info-item">
+                            <div class="phone-footer">
+                                <div class="footer-item">
                                     <small>Last Command</small>
                                     <p>Light turned ON (Voice)</p>
                                 </div>
-                                <div class="info-item">
+                                <div class="footer-item">
                                     <small>Battery</small>
                                     <p>85% remaining</p>
                                 </div>
@@ -341,15 +490,33 @@
             <p class="contact-subtitle">Interested in partnerships, pilot programs, or more information?</p>
             <div class="contact-info">
                 <div class="contact-item">
+                    <div class="card-illustration small">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 25 30 L 50 45 L 75 30 L 75 70 Q 75 75 70 75 L 30 75 Q 25 75 25 70 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                            <path d="M 25 30 L 50 45 L 75 30" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     <strong>Project Lead</strong>
                     <p>Abubakar Zubair Okhayole</p>
                     <p><a href="mailto:abubakar.o.zubair@gmail.com">abubakar.o.zubair@gmail.com</a></p>
                 </div>
                 <div class="contact-item">
+                    <div class="card-illustration small">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 30 50 Q 30 30 50 30 Q 70 30 70 50 Q 70 70 50 70 Q 30 70 30 50 M 35 50 L 65 50" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="50" cy="50" r="8" fill="currentColor"/>
+                        </svg>
+                    </div>
                     <strong>GitHub</strong>
                     <p><a href="https://github.com/al-ibiewi" target="_blank">github.com/al-ibiewi</a></p>
                 </div>
                 <div class="contact-item">
+                    <div class="card-illustration small">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 20 25 L 80 25 Q 85 25 85 30 L 85 70 Q 85 75 80 75 L 20 75 Q 15 75 15 70 L 15 30 Q 15 25 20 25" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                            <path d="M 25 40 L 50 55 L 75 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
                     <strong>Project Repository</strong>
                     <p><a href="https://github.com/al-ibiewi/hospital-voice-assistant" target="_blank">View on GitHub</a></p>
                 </div>
@@ -364,6 +531,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Scripts -->
+    <script type="module" src="js/app.js"></script>
 </body>
 </html>
