@@ -11,13 +11,15 @@
     <nav class="navbar">
         <div class="container">
             <div class="logo">Hospital Voice Assistant</div>
-            <div class="nav-links">
+                <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#problem">Problem</a>
                 <a href="#solution">Solution</a>
                 <a href="#technology">Technology</a>
+                <a href="#mobile-app">Mobile App</a>
                 <a href="#impact">Impact</a>
                 <a href="#contact">Contact</a>
+                <div>
             </div>
         </div>
     </nav>
@@ -227,6 +229,111 @@
         </div>
     </section>
 
+    <!-- Mobile App Section -->
+    <section id="mobile-app" class="section app-section">
+        <div class="container">
+            <h2 class="section-title">Mobile App - Multi-Modal Control</h2>
+            <div class="app-content">
+                <div class="app-text">
+                    <h3>Redundancy for Critical Healthcare</h3>
+                    <p>Voice control fails when patients are intubated, experiencing aphasia, or in noisy environments. Our companion mobile app provides a critical backup control pathway.</p>
+                    
+                    <div class="app-features">
+                        <div class="app-feature-card">
+                            <div class="app-icon">📱</div>
+                            <h4>Bluetooth Low Energy</h4>
+                            <p>Direct connection to ESP32 controller without requiring hospital WiFi. 30-meter range covers entire patient room.</p>
+                        </div>
+                        
+                        <div class="app-feature-card">
+                            <div class="app-icon">🔄</div>
+                            <h4>State Synchronization</h4>
+                            <p>Real-time sync between voice commands, app controls, and physical switches. Change light via voice, see status update in app instantly.</p>
+                        </div>
+                        
+                        <div class="app-feature-card">
+                            <div class="app-icon">👨‍⚕️</div>
+                            <h4>Family Remote Access</h4>
+                            <p>Optional feature allowing family members to monitor patient's room status and receive emergency notifications remotely.</p>
+                        </div>
+                        
+                        <div class="app-feature-card">
+                            <div class="app-icon">♿</div>
+                            <h4>Accessibility First</h4>
+                            <p>Large touch targets, high contrast UI, and screen reader support ensure usability for elderly patients with vision impairments.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="app-mockup">
+                    <div class="phone-frame">
+                        <div class="phone-screen">
+                            <div class="app-header">
+                                <h5>Patient Control Panel</h5>
+                                <span class="status-dot"></span>
+                                <span class="status-text">Connected</span>
+                            </div>
+                            
+                            <div class="control-group">
+                                <div class="control-label">💡 Room Light</div>
+                                <div class="toggle-container">
+                                    <div class="toggle-btn toggle-on">ON</div>
+                                    <div class="toggle-btn">OFF</div>
+                                </div>
+                            </div>
+                            
+                            <div class="control-group">
+                                <div class="control-label">🌀 Room Fan</div>
+                                <div class="toggle-container">
+                                    <div class="toggle-btn">ON</div>
+                                    <div class="toggle-btn toggle-off">OFF</div>
+                                </div>
+                            </div>
+                            
+                            <div class="emergency-btn">
+                                <span class="emergency-icon">🚨</span>
+                                <span>EMERGENCY ALERT</span>
+                            </div>
+                            
+                            <div class="app-footer-info">
+                                <div class="info-item">
+                                    <small>Last Command</small>
+                                    <p>Light turned ON (Voice)</p>
+                                </div>
+                                <div class="info-item">
+                                    <small>Battery</small>
+                                    <p>85% remaining</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="app-tech-stack">
+                <h3>Technical Implementation</h3>
+                <div class="tech-details-grid">
+                    <div class="tech-detail">
+                        <h4>Communication Protocol</h4>
+                        <p><strong>Bluetooth Low Energy (BLE)</strong> for power-efficient wireless communication. Custom GATT profile for command transmission with acknowledgment.</p>
+                    </div>
+                    <div class="tech-detail">
+                        <h4>Platform</h4>
+                        <p><strong>Cross-platform development</strong> using Flutter or React Native, ensuring deployment on both Android and iOS with single codebase.</p>
+                    </div>
+                    <div class="tech-detail">
+                        <h4>State Management</h4>
+                        <p><strong>Real-time synchronization</strong> between hardware state and app UI. WebSocket fallback for WiFi-enabled environments.</p>
+                    </div>
+                    <div class="tech-detail">
+                        <h4>Security</h4>
+                        <p><strong>Encrypted BLE pairing</strong> prevents unauthorized access. Device-specific PIN codes ensure only authorized users control patient environment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="section contact-section">
         <div class="container">
@@ -235,7 +342,8 @@
             <div class="contact-info">
                 <div class="contact-item">
                     <strong>Project Lead</strong>
-                    <p>Al-Ibiewi</p>
+                    <p>Abubakar Zubair Okhayole</p>
+                    <p><a href="mailto:abubakar.o.zubair@gmail.com">abubakar.o.zubair@gmail.com</a></p>
                 </div>
                 <div class="contact-item">
                     <strong>GitHub</strong>
@@ -246,7 +354,6 @@
                     <p><a href="https://github.com/al-ibiewi/hospital-voice-assistant" target="_blank">View on GitHub</a></p>
                 </div>
             </div>
-            <p class="olympiad-badge">🏆 Nigerian Engineering Olympiad Project</p>
         </div>
     </section>
 
