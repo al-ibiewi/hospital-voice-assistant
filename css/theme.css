@@ -1,0 +1,359 @@
+/* Theme and Dark Mode Styles */
+
+/* Light Mode (Default) */
+:root {
+    --theme-bg-primary: #f8f9fa;
+    --theme-bg-secondary: #ffffff;
+    --theme-text-primary: #1a1a2e;
+    --theme-text-secondary: #4a4a5e;
+    --theme-border: rgba(0, 0, 0, 0.1);
+    --theme-bg-secondary-rgb: 255, 255, 255;
+}
+
+/* Dark Mode */
+:root.dark-mode {
+    --theme-bg-primary: #0a0e1a;
+    --theme-bg-secondary: #111827;
+    --theme-text-primary: #e5e7eb;
+    --theme-text-secondary: #9ca3af;
+    --theme-border: rgba(255, 255, 255, 0.1);
+    --theme-bg-secondary-rgb: 17, 24, 39;
+}
+
+/* Update base elements for theme */
+body {
+    background-color: var(--theme-bg-primary);
+    color: var(--theme-text-primary);
+    transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+.navbar {
+    background: rgba(var(--theme-bg-secondary-rgb), 0.95);
+    border-bottom-color: var(--theme-border);
+    backdrop-filter: blur(20px);
+}
+
+/* Card backgrounds */
+.problem-card,
+.tech-card,
+.contact-item,
+.app-feature-card {
+    background: var(--theme-bg-secondary);
+    border: 1px solid var(--theme-border);
+    color: var(--theme-text-primary);
+}
+
+/* Section backgrounds */
+.section {
+    color: var(--theme-text-primary);
+}
+
+.problem-section {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+:root.dark-mode .problem-section {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.1), rgba(0, 212, 255, 0.05));
+}
+
+:root.dark-mode .hero {
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.15), rgba(0, 212, 255, 0.05));
+}
+
+/* Text elements */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--theme-text-primary);
+}
+
+p, span, li {
+    color: inherit;
+}
+
+.section-subtitle,
+.timeline-date,
+.tech-detail p {
+    color: var(--theme-text-secondary);
+}
+
+/* Links and buttons */
+a {
+    color: #0066ff;
+}
+
+:root.dark-mode a {
+    color: #0066ff;
+}
+
+button {
+    color: var(--theme-text-primary);
+}
+
+/* Input and form elements */
+input,
+textarea,
+select {
+    background-color: var(--theme-bg-secondary);
+    color: var(--theme-text-primary);
+    border-color: var(--theme-border);
+}
+
+/* Table styles */
+table {
+    background-color: var(--theme-bg-secondary);
+}
+
+table tr {
+    border-color: var(--theme-border);
+}
+
+table td,
+table th {
+    color: var(--theme-text-primary);
+    border-color: var(--theme-border);
+}
+
+/* Demo section */
+.demo-section {
+    padding: var(--spacing-4xl) 0;
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.05), rgba(0, 212, 255, 0.05));
+}
+
+:root.dark-mode .demo-section {
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.1), rgba(0, 212, 255, 0.05));
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-container {
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--theme-border);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+:root.dark-mode .video-wrapper {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-caption {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    font-style: italic;
+    color: var(--theme-text-secondary);
+}
+
+/* Mobile nav adjustments */
+.mobile-navbar {
+    background: rgba(var(--theme-bg-secondary-rgb), 0.95);
+    border-color: var(--theme-border);
+}
+
+.mobile-nav-item {
+    color: var(--theme-text-secondary);
+}
+
+.mobile-nav-item:hover {
+    background: rgba(0, 102, 255, 0.1);
+}
+
+/* Timeline */
+.timeline-item {
+    border-color: var(--theme-border);
+}
+
+.timeline-content h4 {
+    color: var(--theme-text-primary);
+}
+
+/* Feature lists */
+.feature {
+    color: inherit;
+}
+
+.checkmark {
+    color: #10b981;
+}
+
+/* Placeholder images */
+.placeholder-image {
+    color: #ffffff;
+}
+
+:root.dark-mode .placeholder-image {
+    color: #ffffff;
+}
+
+/* Stats section */
+.stat {
+    color: var(--theme-text-primary);
+}
+
+/* App screen mockup */
+.phone-screen {
+    background: var(--theme-bg-secondary);
+    color: var(--theme-text-primary);
+}
+
+.phone-header {
+    color: var(--theme-text-primary);
+    border-color: var(--theme-border);
+}
+
+.status-badge {
+    background: rgba(16, 185, 129, 0.2);
+    color: #10b981;
+}
+
+.control-section {
+    border-color: var(--theme-border);
+    color: var(--theme-text-primary);
+}
+
+.emergency-btn {
+    background: #ff6b6b;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background: var(--theme-bg-secondary);
+    color: var(--theme-text-secondary);
+    border-top: 1px solid var(--theme-border);
+}
+
+/* Lazy Load Optimization */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Smooth transitions for theme changes */
+* {
+    transition-property: background-color, border-color, color;
+    transition-duration: var(--transition-normal);
+    transition-timing-function: ease;
+}
+
+.theme-toggle,
+a,
+button {
+    transition-property: all;
+}
+
+/* Light Mode - Subtle Modern Shadows */
+:root .problem-card,
+:root .tech-card,
+:root .contact-item,
+:root .app-feature-card {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+:root .problem-card:hover,
+:root .tech-card:hover,
+:root .contact-item:hover,
+:root .app-feature-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+:root .card-illustration:hover,
+:root .problem-card:hover .card-illustration,
+:root .contact-item:hover .card-illustration,
+:root .app-feature-card:hover .card-illustration,
+:root .tech-card:hover .card-illustration {
+    box-shadow: 0 2px 8px rgba(0, 102, 255, 0.12) !important;
+}
+
+:root .checkmark {
+    box-shadow: 0 2px 6px rgba(0, 102, 255, 0.15);
+}
+
+:root .phone-frame {
+    box-shadow: 0 8px 24px rgba(0, 102, 255, 0.1), 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+:root .navbar {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+:root .stat:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+:root .cta-button {
+    box-shadow: 0 2px 8px rgba(0, 102, 255, 0.2);
+}
+
+:root .cta-button:hover {
+    box-shadow: 0 4px 16px rgba(0, 102, 255, 0.25);
+}
+
+:root .cta-button.secondary {
+    box-shadow: 0 2px 8px rgba(220, 38, 38, 0.2);
+}
+
+:root .cta-button.secondary:hover {
+    box-shadow: 0 4px 16px rgba(220, 38, 38, 0.25);
+}
+
+:root .placeholder-image,
+:root .impact-stat-large {
+    box-shadow: 0 4px 16px rgba(0, 102, 255, 0.12);
+}
+
+:root .toggle-btn.toggle-on {
+    box-shadow: 0 2px 8px rgba(0, 102, 255, 0.2);
+}
+
+:root .emergency-btn {
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.25);
+}
+
+:root .emergency-btn:hover {
+    box-shadow: 0 6px 20px rgba(220, 38, 38, 0.3);
+}
+
+:root .theme-toggle:hover {
+    box-shadow: 0 2px 8px rgba(0, 102, 255, 0.15);
+}
+
+:root .mobile-navbar {
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.05);
+}
+
+:root .specs-table {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}

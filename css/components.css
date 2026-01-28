@@ -1,6 +1,6 @@
 /* Mobile App Section */
 .app-section {
-    background: var(--bg-white);
+    background: var(--theme-bg-primary);
 }
 
 .app-content {
@@ -14,7 +14,7 @@
 .app-text h3 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: var(--text-dark);
+    color: var(--theme-text-primary);
     font-weight: var(--font-weight-extra-bold);
     letter-spacing: -0.5px;
     line-height: var(--line-height-tight);
@@ -22,7 +22,7 @@
 
 .app-text > p {
     font-size: 1.25rem;
-    color: var(--text-light);
+    color: var(--theme-text-secondary);
     margin-bottom: 2rem;
     line-height: var(--line-height-relaxed);
 }
@@ -34,10 +34,10 @@
 }
 
 .app-feature-card {
-    background: var(--bg-light);
+    background: var(--theme-bg-secondary);
     padding: 2rem;
     border-radius: var(--border-radius);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--theme-border);
     transition: all 0.3s var(--transition-smooth);
 }
 
@@ -50,13 +50,13 @@
 .app-feature-card h4 {
     font-size: 1.25rem;
     margin-bottom: 0.75rem;
-    color: var(--text-dark);
+    color: var(--theme-text-primary);
     font-weight: var(--font-weight-bold);
 }
 
 .app-feature-card p {
     font-size: 1rem;
-    color: var(--text-light);
+    color: var(--theme-text-secondary);
     line-height: var(--line-height-relaxed);
 }
 
@@ -76,12 +76,13 @@
 }
 
 .phone-screen {
-    background: linear-gradient(to bottom, var(--bg-light) 0%, var(--bg-white) 100%);
+    background: var(--theme-bg-secondary);
     border-radius: 40px;
     padding: 32px 20px;
     min-height: 650px;
     display: flex;
     flex-direction: column;
+    color: var(--theme-text-primary);
 }
 
 .phone-header {
@@ -90,12 +91,12 @@
     justify-content: space-between;
     margin-bottom: 2rem;
     padding-bottom: 1.5rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid var(--theme-border);
 }
 
 .phone-header h5 {
     font-size: 1.5rem;
-    color: #ffffff;
+    color: var(--theme-text-primary);
     flex: 1;
     font-weight: var(--font-weight-bold);
     margin: 0;
@@ -103,7 +104,7 @@
 
 .status-badge {
     background: linear-gradient(135deg, var(--error-color) 0%, #b91c1c 100%);
-    color: white;
+    color: #ffffff;
     padding: 0.5rem 1.25rem;
     border-radius: 20px;
     font-size: 0.8rem;
@@ -113,15 +114,16 @@
 
 .control-section {
     margin-bottom: 2rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
     border-radius: var(--border-radius-lg);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--theme-border);
+    color: var(--theme-text-primary);
 }
 
 .control-section h4 {
     font-size: 1.25rem;
-    color: #ffffff;
+    color: var(--theme-text-primary);
     margin-bottom: 1.25rem;
     font-weight: var(--font-weight-bold);
 }
@@ -152,7 +154,7 @@
 
 .toggle-btn.toggle-on {
     background: linear-gradient(135deg, var(--primary-color) 0%, #0052cc 100%);
-    color: white;
+    color: #ffffff;
     border-color: var(--primary-color);
     box-shadow: 0 6px 16px rgba(0, 102, 255, 0.35);
 }
@@ -168,7 +170,7 @@
     margin-bottom: 2rem;
     padding: 24px;
     background: linear-gradient(135deg, var(--error-color) 0%, #991b1b 100%);
-    color: white;
+    color: #ffffff;
     border-radius: 18px;
     text-align: center;
     font-weight: var(--font-weight-extra-bold);
@@ -222,17 +224,17 @@
 
 /* App Tech Stack */
 .app-tech-stack {
-    background: var(--bg-light);
+    background: var(--theme-bg-secondary);
     padding: 4rem;
     border-radius: var(--border-radius);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--theme-border);
 }
 
 .app-tech-stack h3 {
     font-size: 2rem;
     margin-bottom: 3rem;
     text-align: center;
-    color: var(--text-dark);
+    color: var(--theme-text-primary);
     font-weight: var(--font-weight-extra-bold);
 }
 
@@ -243,10 +245,10 @@
 }
 
 .tech-detail {
-    background: var(--bg-white);
+    background: var(--theme-bg-primary);
     padding: 2.5rem;
     border-radius: var(--border-radius);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--theme-border);
 }
 
 .tech-detail h4 {
@@ -260,21 +262,21 @@
 }
 
 .tech-detail p {
-    color: var(--text-light);
+    color: var(--theme-text-secondary);
     line-height: var(--line-height-relaxed);
 }
 
 .tech-detail strong {
-    color: var(--text-dark);
+    color: var(--theme-text-primary);
     font-weight: var(--font-weight-bold);
 }
 
 /* Footer */
 footer {
-    background: var(--bg-dark);
-    color: var(--text-dark);
+    background: var(--theme-bg-secondary);
+    color: var(--theme-text-secondary);
     text-align: center;
     padding: 3rem 0;
     font-weight: var(--font-weight-semibold);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid var(--theme-border);
 }
