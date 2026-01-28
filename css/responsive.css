@@ -152,6 +152,10 @@
     .app-feature-card {
         padding: 1.5rem;
     }
+    
+    .tech-details-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Prevent horizontal scroll on all screen sizes */
